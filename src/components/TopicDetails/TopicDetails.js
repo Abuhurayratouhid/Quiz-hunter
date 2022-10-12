@@ -11,7 +11,7 @@ const TopicDetails = () => {
     const {questions}= allDetails;
     
     
-    console.log(questions)
+    // console.log(allDetails)
 
     const handleCorrectAnswer = (option,correctAnswer )=>{
         const clickedOption= option;
@@ -21,19 +21,20 @@ const TopicDetails = () => {
             position: "top-center",
             autoClose: 500,
            })
-            console.log('true')
+            // console.log('true')
         }
         else{
             toast.warn('Wrong answer', {
                 position: "top-center",
                 autoClose: 500,
                })
-            console.log('false');
+            // console.log('false');
         }
         // console.log(clickedOption,  rightAnswer)
     } 
     return (
         <div>
+            <h1 className='mt-20 text-3xl '>Quiz of {allDetails.name}</h1>
             {
                 questions.map(options => <Quiz
                 key={options.id}
