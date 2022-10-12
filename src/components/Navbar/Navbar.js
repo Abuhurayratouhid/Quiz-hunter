@@ -9,7 +9,7 @@ const Navbar = () => {
             </div>
 
             <div className='text-1xl mr-10'>
-                <Link className='mr-4' to='/home'> Home </Link>
+                <Link className='mr-4' to='/'> Home </Link>
                 <Link className='mr-4' to='/chart'> Chart </Link>
                 <Link className='mr-4' to='/blog'> Blog </Link>
                 <Link className='mr-4' to='/about'> About  </Link>
