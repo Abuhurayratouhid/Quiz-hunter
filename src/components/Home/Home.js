@@ -8,7 +8,7 @@ const Home = () => {
     // console.log(topics )
     return (
         <div>
-            <div className='shadow-xl h-64 ml-10 mr-10 rounded-md bg-slate-100 mt-32'>
+            <div className='shadow-xl h-64 md:ml-10 md:mr-10 rounded-md bg-slate-100 md:mt-32'>
                 <h1 className='text-6xl font-semibold p-10'>Become a pro start <br /> learning online </h1>
             </div>
             <div className=' ml-10 mr-10 mb-20  mt-32 md:flex justify-around'>

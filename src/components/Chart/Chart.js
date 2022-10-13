@@ -2,7 +2,6 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 import { useLoaderData } from 'react-router-dom';
-import ChartDetails from '../ChartDetails/ChartDetails';
 
 const Chart = () => {
     const alldata = useLoaderData()

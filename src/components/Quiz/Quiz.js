@@ -8,7 +8,7 @@ const Quiz = ({ options, handleCorrectAnswer }) => {
 
     const opt = options.options;
     const correctAnswer = options.correctAnswer;
-    // console.log(options)
+    // console.log(options.id)
     const showCorrectAnswer = (correctAnswer) => {
         toast.success('Correct answer is :' + correctAnswer, {
             position: "top-center",
@@ -23,7 +23,7 @@ const Quiz = ({ options, handleCorrectAnswer }) => {
                 <div className=' md:flex justify-between ml-10 mr-10  items-center'>
                     <div>
 
-                        <h1 className='pt-10'>{options.question} </h1>
+                        <h1 className='pt-10 text-violet-700 text-2xl'>{options.question} </h1>
                     </div>
                     <div>
                         <button className='text-violet-600 text-3xl' onClick={() => showCorrectAnswer(correctAnswer)}>
@@ -35,7 +35,7 @@ const Quiz = ({ options, handleCorrectAnswer }) => {
                 </div>
 
                 {
-                    opt.map(option => <button onClick={() => handleCorrectAnswer(option, correctAnswer)} className='bg-lime-400 w-[300px] md:ml-[450px]  m-5 p-5 block text-center md:w-80'>{option}</button>)
+                    opt.map(option => <button onClick={() => handleCorrectAnswer(option, correctAnswer)} className='bg-lime-400 w-full md:ml-[450px]  m-5 p-5 block text-center  md:w-80'>{option}</button>)
                 }
 
             </div>
